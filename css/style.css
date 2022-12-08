@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -20,4 +20,75 @@ h6 {
 
 p {
   margin: 0;
+} */
+
+a {
+  display: flex;
+  gap: 12px;
+}
+
+h1 {
+  margin-right: auto;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-gap: 1em;
+  padding: 10px;
+  grid-template-areas:
+  "about_section"
+  "projects-section"
+  "contact-section";
+}
+
+#about{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+  "about_me"
+  "about_me_text";
+  gap: 10px;
+}
+
+.monet{
+  grid-area: monet-grid;
+}
+
+.projects-header{
+  grid-area: projects-header-grid;
+}
+
+.fashion-dose{
+  grid-area: fashion-dose-grid;
+}
+
+.covid-art{
+  grid-area: covid-art-grid;
+}
+
+.postcards{
+  grid-area: postcards-grid;
+}
+
+.events{
+  grid-area: events-grid; 
+}
+
+
+.projects-section{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-areas: 
+  "projects-header-grid monet-grid monet-grid"
+  "projects-header-grid fashion-dose-grid covid-art-grid"
+  "projects-header-grid postcards-grid events-grid";
+  gap: 10px;
+  
+
+}
+
+
+#contact{
+  display: flex;
 }
